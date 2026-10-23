@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b22">
+  <meta name="description" content="Nexora 2 — turkuaz fütüristik web araması. By Ömer And Emirhan.">
+  <title>Nexora 2 — By Ömer And Emirhan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Nexora 2 ana sayfa">
+        <span class="brand-mark">N</span>
+        <span><strong>NEXORA <b>2</b></strong><small>YOUR FUTURE. YOUR WEB.</small></span>
+      </a>
+      <span class="status"><i></i> NEXORA SEARCH</span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">DISCOVER SOMETHING NEW</div>
+      <h1>İnterneti <span>kendi tarzında</span><br>keşfet.</h1>
+      <p class="intro">Ara ve sonuçları Nexora'nın kendi arayüzünde keşfet.</p>
+      <form id="searchForm" class="searchbox">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Ne aramak istiyorsun?" autocomplete="off" aria-label="Web'de ara" required>
+        <button id="searchButton" type="submit">ARA <span>↗</span></button>
+      </form>
+      <div class="hint">Enter tuşuna bas veya bir hızlı arama seç</div>
+      <div class="quicklinks" aria-label="Hızlı aramalar">
+        <button type="button" data-query="Minecraft">◈ Minecraft</button>
+        <button type="button" data-query="uçaklar">✦ Uçaklar</button>
+        <button type="button" data-query="hava durumu">☼ Hava durumu</button>
+        <button type="button" data-query="YouTube">▷ YouTube</button>
+      </div>
+    </section>
+
+    <section id="resultsPanel" class="results-panel" hidden aria-live="polite">
+      <div class="results-head">
+        <div><span class="eyebrow">NEXORA SEARCH</span><h2 id="resultsTitle">Arama sonuçları</h2></div>
+        <span id="resultCount" class="provider">HAZIRLANIYOR</span>
+      </div>
+      <p id="searchStatus" class="results-note">İnternette aranıyor…</p>
+      <div id="resultsList" class="results-list"></div>
+      <div class="results-footer">
+        <span class="provider-note">Nexora ücretsiz arama kaynaklarını sırayla dener. Sonuçlar kaynakların erişilebilirliğine göre değişebilir.</span>
+        <a id="moreResults" class="open-results" href="https://duckduckgo.com/" target="_blank" rel="noopener noreferrer">Daha fazla web sonucu ↗</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="thanks">
+        <span class="heart">✦</span>
+        <div><strong>Destek Olanlara Teşekkür Ederiz</strong><p>Bedran <i>·</i> Yusuf Tuna <i>·</i> Burç <i>·</i> Tunahan</p></div>
+      </div>
+      <div class="signature">BY ÖMER AND EMİRHAN</div>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
